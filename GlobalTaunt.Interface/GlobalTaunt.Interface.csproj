@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\Services\IBaseService.cs" />
+    <Compile Include="Interfaces\Services\IGameService.cs" />
     <Compile Include="Interfaces\Services\ISummonerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

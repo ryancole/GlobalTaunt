@@ -10,6 +10,7 @@ namespace GlobalTaunt.Test
         public override void Load()
         {
             Bind<IBaseService>().To<BaseService>();
+            Bind<IGameService>().To<GameService>();
             Bind<ISummonerService>().To<SummonerService>();
         }
     }
