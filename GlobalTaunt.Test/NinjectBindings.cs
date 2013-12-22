@@ -11,6 +11,7 @@ namespace GlobalTaunt.Test
         {
             Bind<IBaseService>().To<BaseService>();
             Bind<IGameService>().To<GameService>();
+            Bind<IChampionService>().To<ChampionService>();
             Bind<ISummonerService>().To<SummonerService>();
         }
     }

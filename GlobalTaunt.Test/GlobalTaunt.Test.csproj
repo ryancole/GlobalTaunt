@@ -59,6 +59,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings1.settings</DependentUpon>
     </Compile>
+    <Compile Include="Tests\ChampionServiceTests.cs" />
     <Compile Include="Tests\GameServiceTests.cs" />
     <Compile Include="Tests\SummonerServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Champion.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Summoner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

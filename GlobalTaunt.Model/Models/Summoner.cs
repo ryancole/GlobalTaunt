@@ -13,6 +13,15 @@
         public string Name { get; set; }
 
         #endregion
+
+        #region Methods
+
+        public override string ToString()
+        {
+            return string.Format("{0} ({1}), Level {2}", Name, Id, SummonerLevel);
+        }
+
+        #endregion
     }
 
     public enum Region
