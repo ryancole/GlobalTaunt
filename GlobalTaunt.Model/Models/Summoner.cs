@@ -6,7 +6,7 @@
 
         public long Id { get; set; }
 
-        public long Level { get; set; }
+        public long SummonerLevel { get; set; }
 
         public long RevisionDate { get; set; }
 
