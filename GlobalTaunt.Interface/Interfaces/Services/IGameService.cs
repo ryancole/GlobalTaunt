@@ -10,7 +10,7 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Get recent games by summoner ID
         /// </summary>
-        List<Game> GetRecent(Region region, long id);
+        IList<Game> GetRecent(Region region, long id);
 
         #endregion
     }
