@@ -10,5 +10,11 @@ namespace GlobalTaunt.Interface
         T Execute<T>(IRestRequest request) where T : new();
 
         #endregion
+
+        #region Properties
+
+        string ApiKey { get; set; }
+
+        #endregion
     }
 }

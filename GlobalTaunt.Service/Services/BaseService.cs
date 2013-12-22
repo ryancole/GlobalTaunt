@@ -14,7 +14,7 @@ namespace GlobalTaunt.Service
             var client = new RestClient("https://prod.api.pvp.net");
 
             // every request requires an access token
-            request.AddParameter("api_key", "86404d05-8d02-4534-9f6f-b08133e9e7cf");
+            request.AddParameter("api_key", ApiKey ?? "");
 
             // make the request and deserialze to model
             var response = client.Execute<T>(request);
@@ -24,6 +24,12 @@ namespace GlobalTaunt.Service
 
             return response.Data;
         }
+
+        #endregion
+
+        #region Properties
+
+        public string ApiKey { get; set; }
 
         #endregion
     }

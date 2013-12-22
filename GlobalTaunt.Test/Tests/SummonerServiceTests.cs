@@ -12,11 +12,15 @@ namespace GlobalTaunt.Test
     public class SummonerServiceTests
     {
         private IKernel m_kernel;
+        private ISummonerService m_summoners;
 
         public SummonerServiceTests()
         {
             m_kernel = new StandardKernel();
             m_kernel.Load(Assembly.GetExecutingAssembly());
+
+            m_summoners = m_kernel.Get<ISummonerService>();
+            m_summoners.ApiKey = Settings1.Default.ApiKey;
         }
 
         #region Tests
@@ -24,8 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetById()
         {
-            var summoners = m_kernel.Get<ISummonerService>();
-            var summoner = summoners.Get(Region.NA, 108);
+            var summoner = m_summoners.Get(Region.NA, 108);
 
             Assert.IsNotNull(summoner);
             Assert.IsTrue(summoner.Name == "ryancole");
@@ -34,8 +37,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetByName()
         {
-            var summoners = m_kernel.Get<ISummonerService>();
-            var summoner = summoners.Get(Region.NA, "ryancole");
+            var summoner = m_summoners.Get(Region.NA, "ryancole");
 
             Assert.IsNotNull(summoner);
             Assert.IsTrue(summoner.Id == 108);

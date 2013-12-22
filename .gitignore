@@ -66,3 +66,5 @@ packages/
 # Database
 *.mdf
 *.ldf
+
+Settings1.*
