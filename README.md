@@ -4,7 +4,7 @@ GlobalTaunt is a C# client for the official [League of Legends API](https://deve
 
 ## Example
 
-For now, just take a look at the unit tests for some basic examples.
+For now, just take a look at the [unit tests](https://github.com/ryancole/GlobalTaunt/tree/master/GlobalTaunt.Test/Tests) for some basic examples.
 
 ## Testing
 
