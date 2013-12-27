@@ -42,6 +42,7 @@
     <Compile Include="Models\Champion.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\League.cs" />
+    <Compile Include="Models\Stats.cs" />
     <Compile Include="Models\Summoner.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

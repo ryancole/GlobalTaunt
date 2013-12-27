@@ -60,6 +60,7 @@
       <DependentUpon>Settings1.settings</DependentUpon>
     </Compile>
     <Compile Include="Tests\ChampionServiceTests.cs" />
+    <Compile Include="Tests\StatsServiceTests.cs" />
     <Compile Include="Tests\TeamServiceTests.cs" />
     <Compile Include="Tests\LeagueServiceTests.cs" />
     <Compile Include="Tests\GameServiceTests.cs" />
