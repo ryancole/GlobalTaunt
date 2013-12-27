@@ -34,6 +34,15 @@ namespace GlobalTaunt.Test
             Assert.IsTrue(stats.Count > 0);
         }
 
+        [TestMethod]
+        public void CanGetRankedBySummoner()
+        {
+            var stats = m_stats.GetRankedBySummoner(Region.NA, StatsSeason.SEASON3, 108);
+
+            Assert.IsNotNull(stats);
+            Assert.IsTrue(stats.Count > 0);
+        }
+
         #endregion
     }
 }

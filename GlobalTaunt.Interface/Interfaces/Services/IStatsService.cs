@@ -12,6 +12,11 @@ namespace GlobalTaunt.Interface
         /// </summary>
         IList<PlayerStatsSummary> GetSummaryBySummoner(Region region, StatsSeason season, long id);
 
+        /// <summary>
+        /// ked Get ranked stats by summoner ID. Includes statistics for Twisted Treeline and Summoner's Rift
+        /// </summary>
+        IList<PlayerRankedChampionStats> GetRankedBySummoner(Region region, StatsSeason season, long id);
+
         #endregion
     }
 }
