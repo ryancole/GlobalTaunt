@@ -12,7 +12,7 @@ namespace GlobalTaunt.Model
 
         public string Queue { get; set; }
 
-        public Dictionary<string, LeagueItem> Entries { get; set; }
+        public List<LeagueItem> Entries { get; set; }
 
         #endregion
     }
@@ -46,8 +46,6 @@ namespace GlobalTaunt.Model
         public string Rank { get; set; }
 
         public string Tier { get; set; }
-
-        public LeagueMiniSeries MiniSeries { get; set; }
 
         #endregion
     }

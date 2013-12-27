@@ -30,7 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RestSharp">
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -49,7 +50,6 @@
     <Compile Include="Services\GameService.cs" />
     <Compile Include="Services\SummonerService.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GlobalTaunt.Interface\GlobalTaunt.Interface.csproj">
       <Project>{a4e096f3-f9ad-4b23-8ae8-e436317cf3fd}</Project>
