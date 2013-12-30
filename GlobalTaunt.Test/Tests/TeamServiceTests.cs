@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetBySummoner()
         {
-            var teams = m_teams.GetBySummoner(Region.NA, 5908);
+            var teams = m_teams.GetBySummoner(SummonerRegion.NA, 5908);
 
             Assert.IsNotNull(teams);
             Assert.IsTrue(teams.Count > 0);

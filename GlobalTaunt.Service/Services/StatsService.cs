@@ -12,7 +12,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// Get player stats summaries by summoner ID. One summary is returned per queue type
         /// </summary>
-        public IList<PlayerStatsSummary> GetSummaryBySummoner(Region region, StatsSeason season, long id)
+        public IList<PlayerStatsSummary> GetSummaryBySummoner(SummonerRegion region, StatsSeason season, long id)
         {
             var request = new RestRequest("/api/lol/{region}/v1.2/stats/by-summoner/{id}/summary", Method.GET);
 
@@ -26,7 +26,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// ked Get ranked stats by summoner ID. Includes statistics for Twisted Treeline and Summoner's Rift
         /// </summary>
-        public IList<PlayerRankedChampionStats> GetRankedBySummoner(Region region, StatsSeason season, long id)
+        public IList<PlayerRankedChampionStats> GetRankedBySummoner(SummonerRegion region, StatsSeason season, long id)
         {
             var request = new RestRequest("/api/lol/{region}/v1.2/stats/by-summoner/{id}/ranked", Method.GET);
 

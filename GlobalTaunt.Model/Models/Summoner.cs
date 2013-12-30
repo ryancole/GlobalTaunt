@@ -12,19 +12,21 @@
 
         public string Name { get; set; }
 
+        public SummonerRegion Region { get; set; }
+
         #endregion
 
         #region Methods
 
         public override string ToString()
         {
-            return string.Format("{0} ({1}), Level {2}", Name, Id, SummonerLevel);
+            return string.Format("{0} @ {1} ({2}), Level {3}", Name, Region, Id, SummonerLevel);
         }
 
         #endregion
     }
 
-    public enum Region
+    public enum SummonerRegion
     {
         NA,
         EUW,

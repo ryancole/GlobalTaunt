@@ -10,7 +10,7 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Retrieves leagues data for summoner, including leagues for all of summoner's teams 
         /// </summary>
-        IDictionary<string, League> Get(Region region, long id);
+        IDictionary<string, League> Get(SummonerRegion region, long id);
 
         #endregion
     }

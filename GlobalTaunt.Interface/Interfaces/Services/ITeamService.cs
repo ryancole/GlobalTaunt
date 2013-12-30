@@ -10,7 +10,7 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Retrieves teams for given summoner ID 
         /// </summary>
-        IList<Team> GetBySummoner(Region region, int id);
+        IList<Team> GetBySummoner(SummonerRegion region, int id);
 
         #endregion
     }

@@ -12,7 +12,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// Retrieve all champions
         /// </summary>
-        public IList<Champion> Get(Region region)
+        public IList<Champion> Get(SummonerRegion region)
         {
             var request = new RestRequest("/api/lol/{region}/v1.1/champion", Method.GET);
 

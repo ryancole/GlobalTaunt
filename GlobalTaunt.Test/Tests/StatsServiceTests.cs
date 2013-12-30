@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetSummaryBySummoner()
         {
-            var stats = m_stats.GetSummaryBySummoner(Region.NA, StatsSeason.SEASON3, 108);
+            var stats = m_stats.GetSummaryBySummoner(SummonerRegion.NA, StatsSeason.SEASON3, 108);
 
             Assert.IsNotNull(stats);
             Assert.IsTrue(stats.Count > 0);
@@ -37,7 +37,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetRankedBySummoner()
         {
-            var stats = m_stats.GetRankedBySummoner(Region.NA, StatsSeason.SEASON3, 108);
+            var stats = m_stats.GetRankedBySummoner(SummonerRegion.NA, StatsSeason.SEASON3, 108);
 
             Assert.IsNotNull(stats);
             Assert.IsTrue(stats.Count > 0);

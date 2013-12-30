@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetRecent()
         {
-            var games = m_games.GetRecent(Region.NA, 108);
+            var games = m_games.GetRecent(SummonerRegion.NA, 108);
 
             Assert.IsNotNull(games);
             Assert.IsTrue(games.Count > 0);

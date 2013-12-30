@@ -12,7 +12,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// Retrieves teams for given summoner ID 
         /// </summary>
-        public IList<Team> GetBySummoner(Region region, int id)
+        public IList<Team> GetBySummoner(SummonerRegion region, int id)
         {
             var request = new RestRequest("/api/lol/{region}/v2.2/team/by-summoner/{id}", Method.GET);
 

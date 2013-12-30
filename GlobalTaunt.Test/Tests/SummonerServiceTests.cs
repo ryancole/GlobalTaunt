@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetById()
         {
-            var summoner = m_summoners.Get(Region.NA, 108);
+            var summoner = m_summoners.Get(SummonerRegion.NA, 108);
 
             Assert.IsNotNull(summoner);
             Assert.IsTrue(summoner.Name == "ryancole");
@@ -37,7 +37,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGetByName()
         {
-            var summoner = m_summoners.Get(Region.NA, "ryancole");
+            var summoner = m_summoners.Get(SummonerRegion.NA, "ryancole");
 
             Assert.IsNotNull(summoner);
             Assert.IsTrue(summoner.Id == 108);

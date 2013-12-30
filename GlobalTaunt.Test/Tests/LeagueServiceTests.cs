@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGet()
         {
-            var leagues = m_leagues.Get(Region.NA, 108);
+            var leagues = m_leagues.Get(SummonerRegion.NA, 108);
 
             Assert.IsNotNull(leagues);
             Assert.IsTrue(leagues.Count > 0);

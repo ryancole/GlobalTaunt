@@ -28,7 +28,7 @@ namespace GlobalTaunt.Test
         [TestMethod]
         public void CanGet()
         {
-            var champions = m_champions.Get(Region.NA);
+            var champions = m_champions.Get(SummonerRegion.NA);
 
             Assert.IsNotNull(champions);
             Assert.IsTrue(champions.Count > 0);

@@ -9,12 +9,12 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Get Summoner by id
         /// </summary>
-        Summoner Get(Region region, long id);
+        Summoner Get(SummonerRegion region, long id);
 
         /// <summary>
         /// Get Summoner by Name
         /// </summary>
-        Summoner Get(Region region, string name);
+        Summoner Get(SummonerRegion region, string name);
 
         #endregion
     }

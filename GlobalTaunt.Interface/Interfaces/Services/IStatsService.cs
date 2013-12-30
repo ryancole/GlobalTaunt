@@ -10,12 +10,12 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Get player stats summaries by summoner ID. One summary is returned per queue type
         /// </summary>
-        IList<PlayerStatsSummary> GetSummaryBySummoner(Region region, StatsSeason season, long id);
+        IList<PlayerStatsSummary> GetSummaryBySummoner(SummonerRegion region, StatsSeason season, long id);
 
         /// <summary>
         /// ked Get ranked stats by summoner ID. Includes statistics for Twisted Treeline and Summoner's Rift
         /// </summary>
-        IList<PlayerRankedChampionStats> GetRankedBySummoner(Region region, StatsSeason season, long id);
+        IList<PlayerRankedChampionStats> GetRankedBySummoner(SummonerRegion region, StatsSeason season, long id);
 
         #endregion
     }

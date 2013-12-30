@@ -12,7 +12,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// Retrieves leagues data for summoner, including leagues for all of summoner's teams 
         /// </summary>
-        public IDictionary<string, League> Get(Region region, long id)
+        public IDictionary<string, League> Get(SummonerRegion region, long id)
         {
             var request = new RestRequest("/api/lol/{region}/v2.2/league/by-summoner/{id}", Method.GET);
 

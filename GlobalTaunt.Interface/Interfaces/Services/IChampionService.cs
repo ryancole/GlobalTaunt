@@ -10,7 +10,7 @@ namespace GlobalTaunt.Interface
         /// <summary>
         /// Retrieve all champions
         /// </summary>
-        IList<Champion> Get(Region region);
+        IList<Champion> Get(SummonerRegion region);
 
         #endregion
     }

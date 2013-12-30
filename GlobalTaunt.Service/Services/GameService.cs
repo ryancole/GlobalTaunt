@@ -12,7 +12,7 @@ namespace GlobalTaunt.Service
         /// <summary>
         /// Get recent games by summoner ID
         /// </summary>
-        public IList<Game> GetRecent(Region region, long id)
+        public IList<Game> GetRecent(SummonerRegion region, long id)
         {
             var request = new RestRequest("/api/lol/{region}/v1.2/game/by-summoner/{id}/recent", Method.GET);
 
